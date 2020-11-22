@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ul:nth-child(2) {
+           background-color: red;
+        } 안 됨 왜? ul 안에 div,p,span 섞여있기때문에 구분을 못함*/
+        .fruit p:nth-child(2) {
+            color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <ul class="fruit">
+        <div>딸기</div>
+        <p>사과</p>
+        <p>오렌지</p>
+        <span>망고</span>
+    </ul>
+</body>
+</html>

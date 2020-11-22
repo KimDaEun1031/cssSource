@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* h1 + h2에서 + 를 또 하면 그것 까지 선택됨
+        h1 ~ h2는 h1 뒤에서 따라나오는 모든 형제들 까지 포함
+        자손에서 형제 중에서 난 내가 선택하고 싶다 하면 + 를 쓰고
+        다 포함시키고 싶다 하면 ~를 하면 될듯 */
+        div h1 ~ h2 {
+            color:  red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>css 선택자</h1>
+        <h2>형제 선택자</h2>
+        <h2>형제 선택자</h2>
+        <nav>
+            <h2>제목</h2>
+        </nav>
+    </div>
+</body>
+</html>
